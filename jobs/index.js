@@ -1,8 +1,4 @@
-const JOB_INTERVAL_MS = 1000;
+import { discoveryJob } from "./discoveryJob.js";
 
-async function runJob() {
-  console.log("hello");
-}
-
-runJob();
-setInterval(runJob, JOB_INTERVAL_MS);
+console.log("Starting jobs...");
+discoveryJob();

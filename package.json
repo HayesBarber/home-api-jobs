@@ -2,6 +2,7 @@
   "name": "home-api-jobs",
   "version": "1.0.0",
   "main": "jobs/index.js",
+  "type": "module",
   "scripts": {
     "start": "node jobs/index.js"
   },

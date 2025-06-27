@@ -1,13 +1,11 @@
-import { BASE_URL } from "./config.js";
-
-export function runJob(endpoint, jobName) {
-  return async function () {
+export function runJob(jobFn, label) {
+  return async () => {
     try {
-      const response = await fetch(`${BASE_URL}${endpoint}`);
-      const data = await response.json();
-      console.log(`${jobName} response:`, data);
-    } catch (error) {
-      console.error(`Error running ${jobName}:`, error);
+      console.log(`Running job: ${label}`);
+      await jobFn();
+      console.log(`Completed job: ${label}`);
+    } catch (err) {
+      console.error(`Job failed (${label}):`, err);
     }
   };
 }

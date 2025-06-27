@@ -1,4 +1,4 @@
-import { runJob } from "./jobRunner.js";
+import { runJob } from "../jobRunner.js";
 
 export function checkForOfflineJob() {
   const JOB_INTERVAL_MS = 10 * 60 * 1000;

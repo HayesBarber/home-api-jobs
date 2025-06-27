@@ -1,10 +1,10 @@
 {
   "name": "home-api-jobs",
   "version": "1.0.0",
-  "main": "jobs/index.js",
+  "main": "app/index.js",
   "type": "module",
   "scripts": {
-    "start": "node jobs/index.js"
+    "start": "node app/index.js"
   },
   "repository": {
     "type": "git",

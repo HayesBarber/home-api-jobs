@@ -1,5 +1,5 @@
 export function discoveryJob() {
-  const JOB_INTERVAL_MS = 1000;
+  const JOB_INTERVAL_MS = 5 * 60 * 1000;
 
   async function runJob() {
     try {

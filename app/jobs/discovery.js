@@ -1,4 +1,4 @@
-import { runJob } from "../jobRunner";
+import { runJob } from "../jobRunner.js";
 
 export function discoveryJob() {
   const JOB_INTERVAL_MS = 5 * 60 * 1000;

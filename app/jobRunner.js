@@ -1,4 +1,4 @@
-import { BASE_URL } from "./config";
+import { BASE_URL } from "./config.js";
 
 export function runJob(endpoint, jobName) {
   return async function () {

@@ -1,17 +1,15 @@
 {
   "name": "home-api-jobs",
   "version": "1.0.0",
-  "main": "jobs/index.js",
+  "main": "app/index.js",
   "type": "module",
   "scripts": {
-    "start": "node jobs/index.js"
+    "start": "node app/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HayesBarber/home-api-jobs.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/HayesBarber/home-api-jobs/issues"

@@ -1,9 +1,10 @@
 {
   "name": "home-api-jobs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "jobs/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node jobs/index.js"
   },
   "repository": {
     "type": "git",

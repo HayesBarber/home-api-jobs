@@ -7,10 +7,9 @@ export class LOGGER {
     return `[${currentDate} ${currentTime}]`;
   }
 
-  static getCurrentTime(now, timeStyle) {
+  static getCurrentTime(now) {
     return now.toLocaleTimeString("en-US", {
       timeZone: "America/New_York",
-      timeStyle: timeStyle,
     });
   }
 

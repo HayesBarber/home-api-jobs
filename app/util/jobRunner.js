@@ -1,4 +1,4 @@
-import { LOGGER } from "./logger";
+import { LOGGER } from "./logger.js";
 /**
  * @param {() => Promise<import("../../generated/Api").HttpResponse>} jobFn
  * @param {string} label

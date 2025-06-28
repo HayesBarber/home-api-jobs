@@ -1,4 +1,4 @@
-class LOGGER {
+export class LOGGER {
   static getCurrentDateTime() {
     const now = new Date();
     const currentDate = this.getCurrentDate(now);

@@ -1,3 +1,4 @@
+import { LOGGER } from "./logger";
 /**
  * @param {() => Promise<import("../../generated/Api").HttpResponse>} jobFn
  * @param {string} label
@@ -5,14 +6,13 @@
 export function runJob(jobFn, label) {
   return async () => {
     try {
-      console.log(`Running job: ${label}`);
+      LOGGER.log(`Running job: ${label}`);
       const result = await jobFn();
-      const json = await result.json();
       const code = result.status;
-      console.log("Completed job", label);
-      console.log("Status code:", code, "Json:", json);
+      LOGGER.info("Completed job", label);
+      LOGGER.info("Status code:", code);
     } catch (err) {
-      console.error(label, "Job Failed:", err);
+      LOGGER.error(label, "Job Failed:", err);
     }
   };
 }
